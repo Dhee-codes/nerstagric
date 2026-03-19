@@ -1,5 +1,5 @@
 import { HeroSection } from "@/components/sections/home/HeroSection";
-// import { IntroSection } from "@/components/sections/home/IntroSection";
+import { IntroSection } from "@/components/sections/home/IntroSection";
 // import { ExpertiseSection } from "@/components/sections/home/ExpertiseSection";
 // import { WhyUsSection } from "@/components/sections/home/WhyUsSection";
 // import { CTABanner } from "@/components/sections/home/CTABanner";
@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      {/* <IntroSection />
-      <ExpertiseSection />
+      <IntroSection />
+      {/* <ExpertiseSection />
       <WhyUsSection />
       <CTABanner />
       <PartnersSection />

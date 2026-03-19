@@ -6,7 +6,7 @@
   --primary: #0d651a;
   --primary-light: #299539;
   --primary-dark: #0d2f12;
-  --accent: #84f896;
+  --accent: #17b52f;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
