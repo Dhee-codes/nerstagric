@@ -30,7 +30,7 @@ function NavLink({
       href={href}
       onClick={onClick}
       aria-current={isActive ? "page" : undefined}
-      className={`flex items-center gap-2 text-[15.75px] text-white tracking-[0.2em] group hover:font-semibold ${
+      className={`flex items-center gap-2 text-[15.75px] text-white tracking-[0.2em] group hover:text-accent ${
         isActive ? "font-semibold uppercase" : "font-light"
       }`}
     >
@@ -86,7 +86,7 @@ export const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <>
+    <header className="sticky top-0 z-50">
       <nav className="bg-black/48 w-full px-8 sm:px-14 md:px-20 lg:px-26.25 py-6.25">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -120,7 +120,7 @@ export const Navbar = () => {
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation"
-        className={`fixed inset-0 z-50 md:hidden transition-opacity duration-300 ${
+        className={`fixed inset-0 md:hidden transition-opacity duration-300 ${
           isOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -163,6 +163,6 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-    </>
+    </header>
   );
 };

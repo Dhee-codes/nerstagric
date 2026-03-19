@@ -2,10 +2,11 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #14293E;
   --primary: #0d651a;
   --primary-light: #299539;
   --primary-dark: #0d2f12;
+  --accent: #84f896;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -16,12 +17,13 @@
   --color-primary: var(--primary);
   --color-primary-light: var(--primary-light);
   --color-primary-dark: var(--primary-dark);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent: var(--accent);
+  --font-inter: var(--font-inter);
+  --font-urbanist: var(--font-urbanist);
 }
 
 .dark {
-  --background: #0a0a0a;
+  --background: #14293E;
   --foreground: #ffffff;
 }
 
