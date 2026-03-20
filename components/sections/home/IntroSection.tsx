@@ -83,7 +83,7 @@ export const IntroSection = () => {
       </div>
 
       <div>
-        <div className="text-[1.5rem] md:text-[1.9025rem] leading-[41.2px] font-medium font-urbanist mb-13.25">
+        <div className="section-head mb-13.25">
           True experience
         </div>
 

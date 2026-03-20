@@ -34,3 +34,18 @@
     color: var(--color-foreground);
   }
 }
+
+@utility section-head {
+  font-size: 1.5rem;
+  line-height: 41.2px;
+  font-weight: 500;
+  font-family: var(--font-urbanist);
+
+  @variant md {
+    font-size: 1.9025rem;
+  }
+}
+
+@utility primary-gradient {
+  background: linear-gradient(to bottom, var(--color-primary-light), var(--color-primary-dark));
+}

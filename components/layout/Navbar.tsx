@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Logo } from "../Logo";
+import { Plus, ArrowUpRight } from "../ui/Icons";
 import Link from "next/link";
 
 const links = [
@@ -30,45 +31,12 @@ function NavLink({
       href={href}
       onClick={onClick}
       aria-current={isActive ? "page" : undefined}
-      className={`flex items-center gap-2 text-[15.75px] text-white tracking-[0.2em] group hover:text-accent ${
+      className={`flex items-center gap-2.5 text-[15.75px] text-white tracking-[0.2em] group hover:text-accent ${
         isActive ? "font-semibold uppercase" : "font-light"
       }`}
     >
       <span className="group-hover:scale-110">
-        {isActive ? (
-          <svg
-            aria-hidden="true"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 5V19M5 12H19"
-              stroke="currentColor"
-              strokeWidth="1.6"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        ) : (
-          <svg
-            aria-hidden="true"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7 17L17 7M17 7H7M17 7V17"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        )}
+        {isActive ? <Plus /> : <ArrowUpRight />}
       </span>
       {label}
     </Link>
